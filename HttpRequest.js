@@ -37,7 +37,7 @@ class HttpRequest {
     call(endPoint, method, headers = null, body = null) {
         if (endPoint) {
             let url = this.apiBaseUrl + endPoint;
-            let responseType = this.responsedataType
+            let responseType = this.responsedataType;
             if (method) {
                 method = method.toUpperCase();
                 return new Promise((resolve, reject) => {
